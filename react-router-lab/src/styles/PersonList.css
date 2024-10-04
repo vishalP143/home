@@ -5,6 +5,8 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    font-size: large;
+    
 }
 
 .person-list h1 {
