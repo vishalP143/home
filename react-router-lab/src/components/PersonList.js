@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../styles/PersonList.css'
 
 // const API_URL= process.env.REACT_APP_API_URL
-const output = axios.get("https://5000-vishalp143-home-3snnrii3xbd.ws-us116.gitpod.io/persons")
+const output = axios.get("https://5000-vishalp143-home-nxvii7uvu5o.ws-us116.gitpod.io/persons")
 const PersonList = () => {
 
 
