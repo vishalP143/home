@@ -1,0 +1,37 @@
+/* src/styles/Notification.css */
+
+.notification {
+    display: flex;
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Center items vertically */
+    padding: 15px; /* Padding around the notification */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0; /* Margin above and below the notification */
+    color: white; /* White text color */
+}
+
+.notification.success {
+    background-color: #28a745; /* Green background for success */
+}
+
+.notification.error {
+    background-color: #dc3545; /* Red background for error */
+}
+
+.notification.warning {
+    background-color: #ffc107; /* Yellow background for warning */
+}
+
+.btn-close {
+    margin-left: 15px; /* Space between text and button */
+    padding: 8px 12px; /* Padding for close button */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-close:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Lighter on hover */
+}

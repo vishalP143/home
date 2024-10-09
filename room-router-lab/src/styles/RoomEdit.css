@@ -1,0 +1,94 @@
+/* src/styles/RoomEdit.css */
+
+.room-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.room-edit h1 {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Larger font size for the title */
+    color: #333; /* Darker text color */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Increased max-width for a more spacious form */
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Lighter border color */
+    border-radius: 6px;
+    font-size: 16px; /* Slightly larger font size for input fields */
+}
+
+.input-field::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.room-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px; /* Increased max-width for action buttons */
+    margin-top: 25px;
+}
+
+.room-actions button {
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    border: none; /* No border for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-update {
+    background-color: #007bff; /* Blue background for update button */
+    color: white; /* White text for buttons */
+}
+
+.btn-update:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-cancel {
+    background-color: #6c757d; /* Gray background for cancel button */
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+.btn-back {
+    background-color: #28a745; /* Green background for back button */
+    color: white;
+}
+
+.btn-back:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+    .room-actions {
+        flex-direction: column;
+        align-items: stretch; /* Stretch buttons to full width */
+        margin-top: 15px; /* Reduced margin for smaller screens */
+    }
+
+    .room-actions button {
+        margin-bottom: 10px; /* Space between buttons on small screens */
+        width: 100%; /* Full width buttons on mobile devices */
+        padding: 12px; /* Increased padding for better touch targets */
+        font-size: 16px; /* Consistent font size across devices */
+    }
+}

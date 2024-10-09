@@ -1,0 +1,32 @@
+/* src/styles/NotFound.css */
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    padding: 40px; /* Padding around the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    color: #dc3545; /* Red color for error message */
+}
+
+p {
+    margin-bottom: 20px; /* Space below the paragraph */
+    color: #555; /* Dark gray text color */
+}
+
+.btn {
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Blue background for button */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

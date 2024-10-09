@@ -1,0 +1,52 @@
+{
+    "rooms": [
+      {
+        "name": "Room A",
+        "maxcount": 2,
+        "phonenumber": "123-456-7890",
+        "rentperday": 100,
+        "type": "Single",
+        "description": "A cozy single room with a beautiful view.",
+        "location": "1st Floor, Building A",
+        "features": ["WiFi", "Air Conditioning", "TV"],
+        "roomIssuedDate": "2024-10-01T00:00:00Z",
+        "availability": true
+      },
+      {
+        "name": "Room B",
+        "maxcount": 4,
+        "phonenumber": "987-654-3210",
+        "rentperday": 150,
+        "type": "Double",
+        "description": "A spacious double room perfect for families.",
+        "location": "2nd Floor, Building B",
+        "features": ["WiFi", "Mini Bar", "Balcony"],
+        "roomIssuedDate": "2024-09-15T00:00:00Z",
+        "availability": true
+      },
+      {
+        "name": "Room C",
+        "maxcount": 1,
+        "phonenumber": "555-123-4567",
+        "rentperday": 80,
+        "type": "Single",
+        "description": "A small yet comfortable room for solo travelers.",
+        "location": "3rd Floor, Building C",
+        "features": ["WiFi"],
+        "roomIssuedDate": "2024-10-05T00:00:00Z",
+        "availability": false
+      },
+      {
+        "name": "Room D",
+        "maxcount": 3,
+        "phonenumber": "444-567-8901",
+        "rentperday": 200,
+        "type": "Suite",
+        "description": "Luxurious suite with all amenities.",
+        "location": "Penthouse, Building D",
+        "features": ["WiFi", "Air Conditioning", "Jacuzzi", "TV"],
+        "roomIssuedDate": null,
+        "availability": true
+      }
+    ]
+  }
