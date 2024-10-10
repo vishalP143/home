@@ -16,7 +16,7 @@ const RoomList = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       try {
-        const response = await axios.get(`${API_URL}/rooms`); // Adjust API endpoint for rooms
+        const response = await axios.get(API_URL); // Adjust API endpoint for rooms
         setRooms(response.data);
       } catch (error) {
         console.error('Error fetching rooms:', error);

@@ -14,7 +14,7 @@ const App = () => {
             <div className="box-container">
                 <Routes>
                     <Route path="/" element={<RoomList />} /> {/* Route for room list */}
-                    <Route path="/add" element={<RoomAdd />} /> {/* Route for adding a room */}
+                    <Route path="/add-room" element={<RoomAdd />} /> {/* Route for adding a room */}
                     <Route path="/edit/:id" element={<RoomEdit />} /> {/* Route for editing a room */}
                     <Route path="/room/:id" element={<RoomDetail />} /> {/* Route for room details */}
                 </Routes>
