@@ -37,7 +37,13 @@ const RoomAdd = () => {
         location,
         features: features.split(',').map(feature => feature.trim()), // Convert comma-separated features to an array
       });
+
+      console.log('Response from API:', response.data); // Log the response to check ID
       const newRoomId = response.data.id;
+
+      if (!newRoomId) {
+        throw new Error("Room ID is missing from the API response.");
+      }
 
       // Clear form fields
       setName('');
@@ -56,7 +62,7 @@ const RoomAdd = () => {
       setIsLoading(false); // Stop loading here
 
       // Navigate to the new room's detail page after 2 seconds
-      setTimeout(() => navigate(`/room/${newRoomId}`), 2000);
+      setTimeout(() => navigate(`/rooms/${newRoomId}`), 2000);
     } catch (error) {
       console.error('Error adding room:', error);
       setShowNotification({ type: 'error', text: 'Failed to add room. Please try again.' });
