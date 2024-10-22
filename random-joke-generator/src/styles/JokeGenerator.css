@@ -1,0 +1,79 @@
+.joke-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.joke-container p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.joke-btn {
+    background-color: #61dafb;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.joke-btn:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .joke-container {
+        padding: 15px;
+    }
+
+    .joke-container p {
+        font-size: 1.2rem;
+    }
+
+    .joke-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .joke-container {
+        padding: 30px;
+    }
+
+    .joke-container p {
+        font-size: 1.8rem;
+    }
+
+    .joke-btn {
+        font-size: 1.5rem;
+        padding: 12px 24px;
+    }
+}
